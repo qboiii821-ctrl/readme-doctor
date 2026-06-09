@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --accent: #5a43d6;
+  --acid: #d8ff3e;
+  --coral: #ff8066;
+  --ink: #181816;
+  --line: #c8c4ba;
+  --muted: #67655e;
+  --paper: #f5f2e9;
+  --mono: 'DM Mono', Consolas, monospace;
+  --sans: 'Manrope', 'Segoe UI', sans-serif;
+  --serif: 'DM Serif Display', Georgia, serif;
+
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--coral);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--acid);
+  color: var(--ink);
+}
