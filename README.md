@@ -80,7 +80,7 @@ npm run preview  # 预览生产构建
 - [x] README 评分与改进建议
 - [x] GitHub Pages 在线版本
 - [x] 响应式界面
-- [ ] 支持英文界面
+- [ ] [提供英文版 README](https://github.com/qboiii821-ctrl/readme-doctor/issues/1)
 - [ ] 生成可复制的 README 模板
 - [ ] 支持分享体检报告
 
