@@ -1,0 +1,75 @@
+name: 问题反馈
+description: 报告可以稳定复现的错误或异常行为
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你帮助改进 Readme Doctor。请尽量完整地填写以下信息。
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 请清楚说明发生了什么。
+      placeholder: 我输入仓库地址后……
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 请按顺序列出可以复现问题的操作。
+      placeholder: |
+        1. 打开……
+        2. 输入……
+        3. 点击……
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期结果
+      description: 你原本希望看到什么？
+    validations:
+      required: true
+
+  - type: input
+    id: repository
+    attributes:
+      label: 被检查的公开仓库
+      description: 如果问题与某个仓库有关，请提供它的公开链接。
+      placeholder: https://github.com/owner/repository
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: 浏览器
+      options:
+        - Chrome
+        - Edge
+        - Firefox
+        - Safari
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图或补充信息
+      description: 可直接拖入截图，也可以补充系统版本、错误信息等内容。
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已经搜索过现有 Issue，没有发现相同问题。
+          required: true
+        - label: 我提供的仓库和截图不包含敏感信息。
+          required: true
